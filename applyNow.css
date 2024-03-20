@@ -1,0 +1,131 @@
+input:-internal-autofill-selected {
+    background-color: white;
+}
+
+.custom-container {
+    max-width: 600px;
+    margin: 60px auto;
+}
+
+.slds-p-around_medium {
+    padding: 1rem;
+}
+
+.slds-p-top_medium {
+    padding-top: 1rem;
+}
+
+.slds-m-bottom_medium {
+    margin-bottom: 1rem;
+}
+
+.success-message-container {
+    width: 100%;
+    border: 2px solid rgb(1, 151, 1);
+    margin-top: 27px;
+    padding: 7px;
+    display: none;
+}
+
+.success-message-container p {
+    color: rgb(1, 151, 1);
+    text-align: center;
+    font-weight: 700;
+}
+
+.custom-button {
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+}
+
+.disabled {
+    user-select: none;
+    filter: grayscale(100%);
+}
+
+.slds-input:active,
+.slds-input:focus {
+    box-shadow: none;
+}
+
+input[type=file] {
+    padding: 0;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #0176d3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+#toast-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+}
+
+.toast {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 300px;
+    word-wrap: break-word;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.success {
+    background-color: #28a745;
+}
+
+.error {
+    background-color: #dc3545;
+}
+
+.close-btn {
+    cursor: pointer;
+    color: #fff;
+}
+
+.custom-container{
+    margin-top: 140px;
+}

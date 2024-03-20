@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metadologie</title>
+    <link rel="icon" type="image/x-icon" href="../media/Home page/Metadologie Icon.png" />
+
+    <link rel="stylesheet" href="../css/header.css" />
+    <!-- <link href="css/footer.css"/> -->
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/contact-us-section.css" />
+    <link rel="stylesheet" href="../chatBot/chatBot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.19.0/styles/salesforce-lightning-design-system.min.css"
+        integrity="sha512-p9SCOMLK1HdDw85Sxg6PaduBc1ZYvsBXWly04TfTby25K+tNjm/oRpxbNNWDBcbbx8Ub5OfZQHHsYjzuxCcjGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.19.0/styles/salesforce-lightning-design-system-imports.sanitized.min.css"
+        integrity="sha512-v6qYYBjS6WOilqFwBtxz0KQ3RQrfA8cIe3IvTVEEPVbEJ5+HEA3Bxj97GHr4VVqTMRyYyt+Sk87wIrbdaj/tIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.19.0/styles/salesforce-lightning-design-system-legacy.min.css"
+        integrity="sha512-49tjht7T7xi5wakXgkWna303l1ZOTXUmwRCIp/InvLPihQJ2p+066faUNb/2uunF3VRE12G1d4trj5wxj/eNzw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.19.0/styles/salesforce-lightning-design-system-offline.min.css"
+        integrity="sha512-5TxFNg4oqv0EHwpbCKjh/ETVMYUx4kADhKax+tgWFC0RTmISsu3k1wdCWaUIRjO49tBXw5Q/+yHRW+VjozmtWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.19.0/styles/salesforce-lightning-design-system.sanitized.min.css"
+        integrity="sha512-MqKmG7CPKEx1YahVSC3RkkQy9/h35LlwaRt574tKvtcJ3786PfsXzud5wv909ywD5RcThg3e192ea3e3o2+sQg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/design-system/2.19.0/styles/salesforce-lightning-design-system_touch.min.css"
+        integrity="sha512-9frhpdDNgb/CE+5hESvd4ZO3mKFJ9hksJBjtey3pfinA+w6Xin6n1IVZ2/dfTVkGrtlLOVCv/x9j7hWBRrLfRQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- New Header and Footer Link -->
+    <link rel="stylesheet" href="../footer/footer.css" />
+    <link rel="stylesheet" href="../header/header.css" />
+    <link rel="stylesheet" href="../common/common.css" />
+    <link rel="stylesheet" href="./applyNow.css">
+</head>
+
+<body>
+    <header>
+        <common-header></common-header>
+    </header>
+    <section class="apply-now-section">
+        <div class="custom-container">
+            <form enctype="multipart/form-data">
+
+                <div class="slds-box slds-theme_default slds-p-around_medium">
+                    <h2 class="slds-text-heading_medium slds-m-bottom_medium slds-text-align_center">Candidate
+                        Information</h2>
+
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col">
+                            <div class="slds-form slds-form_stacked">
+                                <div class="slds-grid slds-wrap">
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="name">Name <abbr
+                                                    class="slds-required" title="required">* </abbr></label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input name" placeholder="Jhon Dew" id="name"
+                                                    onkeyup="validateName(this)" required="true" maxLength="100" />
+                                            </div>
+                                            <label class="slds-required"></label>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="Email">Email <abbr
+                                                    class="slds-required" title="required">* </abbr></label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" id="Email" placeholder="example@gmail.com"
+                                                    required="true" maxLength="100" onkeyup="validateEmail(this)" />
+                                            </div>
+                                            <label class="slds-required"></label>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="Phone">Phone <abbr
+                                                    class="slds-required" title="required">* </abbr></label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" id="phone" required="true"
+                                                    placeholder="000 000 000 0" onkeyup="formatPhoneNumber(this)"
+                                                    maxLength="15" />
+                                            </div>
+                                            <label class="slds-required"></label>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="current-location">Current
+                                                Location</label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" id="current-location" maxLength="100"
+                                                    placeholder="jaipur, rajasthan" />
+                                            </div>
+                                            <label class="slds-required"></label>
+
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="current-salary">Current
+                                                Salary</label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" id="current-salary" placeholder="29990"
+                                                    onkeyup="onlyNumeric(this)" maxLength="10" />
+                                            </div>
+                                            <label class="slds-required"></label>
+
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="current-salary">Expected
+                                                Salary</label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" id="expected-salary" placeholder="29990"
+                                                    onkeyup="onlyNumeric(this)" maxLength="10" />
+                                            </div>
+                                            <label class="slds-required"></label>
+
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="current-company">Current
+                                                Company</label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" label="Current Company" id="current-company"
+                                                    placeholder="Metadologie" maxLength="50" />
+                                            </div>
+                                        </div>
+                                        <label class="slds-required"></label>
+
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="notice-period">Notice
+                                                Period</label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" label="Notice Period" placeholder="60"
+                                                    onkeyup="onlyNumeric(this)" id="notice-period" maxLength="2" />
+                                            </div>
+                                        </div>
+                                        <label class="slds-required"></label>
+
+                                    </div>
+
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="resume">
+                                            <label class="slds-form-element__label" for="Resume">Resume <abbr
+                                                    class="slds-required" title="required">* </abbr></label>
+                                            <input class="slds-input" style="border: none;" type="file" id="resume"
+                                                onchange="isFileInputNotEmpty(this)" required="true" multiple="false" />
+                                            <label class="slds-required"></label>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="slds-m-top_medium slds-m-top_medium slds-grid slds-grid_align-center "
+                                    id="saveForm">
+                                    <button class="slds-button slds-button_brand custom-button" id="save-btn"
+                                        onmouseleave="handleButtonStatus(false)" onclick="handleSave(event)"
+                                        type="submit">Save</button>
+                                </div>
+
+                                <div id="success-content" class="success-message-container"><p>Your Request Has Been Submitted Successfully</p></div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <c-contact-us-section data-data-rendering-service-uid="43" data-aura-rendered-by="432:0"
+        c-contactussection_contactussection-host="">
+        <section c-contactussection_contactussection="" class="contact-us-section">
+            <div c-contactussection_contactussection="" class="container" style="height: 100%">
+                <div c-contactussection_contactussection="" class="content">
+                    <lightning-formatted-rich-text c-contactussection_contactussection=""
+                        class="slds-rich-text-editor__output"><span>
+                            <p>Learn how we can help you</p>
+                        </span></lightning-formatted-rich-text>
+                </div>
+                <div c-contactussection_contactussection="" class="btn">
+                    <a c-contactussection_contactussection="" href="./Pages/contact-us.html">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+    </c-contact-us-section>
+    <footer>
+        <common-footer></common-footer>
+    </footer>
+
+   <script src="./applyNow.js"></script>
+
+    <script
+        type="text/javascript"
+        src="https://service.force.com/embeddedservice/5.0/esw.min.js"
+        >
+    </script>
+    <script src="../chatBot/chatBot.js" defer></script>
+    <script src="../header/header.js" defer></script>
+    <script src="../footer/footer.js" defer></script>
+</body>
+
+</html>
