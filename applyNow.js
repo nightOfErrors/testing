@@ -191,6 +191,7 @@ const saveCandidateInformation = () => {
             .then(res => {
 
                 document.getElementById("spinner").classList.add("hidden");
+                
                 submissionSuccess();
                 handleButtonStatus(false);
                 if (res.includes('success')) {
@@ -201,10 +202,6 @@ const saveCandidateInformation = () => {
                     console.log();
                     showToast(res,'error', 3000);
                 }
-
-                // setTimeout(() => {
-                //     window.location.href = "https://www.metadologie.com/";
-                // }, 2000);
 
             })
             .catch(error => {
