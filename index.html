@@ -108,11 +108,39 @@
                                     <div
                                         class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
                                         <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="notice-period">Notice
+                                                Period
+                                                <abbr
+                                                class="slds-required" title="required">* </abbr></label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" required="true" label="Notice Period" placeholder="Enter in weeks eg : 8"
+                                                    onkeyup="onlyNumeric(this)" id="notice-period" maxLength="2" />
+                                            </div>
+                                        </div>
+                                        <label class="slds-required"></label>
+
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
+                                            <label class="slds-form-element__label" for="Exparience">Overall Experience <abbr
+                                                    class="slds-required" title="required">* </abbr></label>
+                                            <div class="slds-form-element__control">
+                                                <input class="slds-input" id="experience" required="true"
+                                                    placeholder="Enter in years eg : 4.2" onkeyup="includeDecimal(this)" maxLength="4" 
+                                                    />
+                                            </div>
+                                            <label class="slds-required"></label>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
+                                        <div class="slds-form-element slds-m-bottom_medium">
                                             <label class="slds-form-element__label" for="current-location">Current
                                                 Location</label>
                                             <div class="slds-form-element__control">
                                                 <input class="slds-input" id="current-location" maxLength="100"
-                                                    placeholder="jaipur, rajasthan" />
+                                                    placeholder="Jaipur, Rajasthan" />
                                             </div>
                                             <label class="slds-required"></label>
 
@@ -124,8 +152,8 @@
                                             <label class="slds-form-element__label" for="current-salary">Current
                                                 Salary</label>
                                             <div class="slds-form-element__control">
-                                                <input class="slds-input" id="current-salary" placeholder="29990"
-                                                    onkeyup="onlyNumeric(this)" maxLength="10" />
+                                                <input class="slds-input" id="current-salary" placeholder="Enter in LPA eg : 7.5"
+                                                    onkeyup="includeDecimal(this)" maxLength="10" />
                                             </div>
                                             <label class="slds-required"></label>
 
@@ -137,8 +165,8 @@
                                             <label class="slds-form-element__label" for="current-salary">Expected
                                                 Salary</label>
                                             <div class="slds-form-element__control">
-                                                <input class="slds-input" id="expected-salary" placeholder="29990"
-                                                    onkeyup="onlyNumeric(this)" maxLength="10" />
+                                                <input class="slds-input" id="expected-salary" placeholder="Enter in lakhs eg : 12"
+                                                onkeyup="includeDecimal(this)" maxLength="10" />
                                             </div>
                                             <label class="slds-required"></label>
 
@@ -157,18 +185,18 @@
                                         <label class="slds-required"></label>
 
                                     </div>
+
                                     <div
                                         class="slds-col form-ele slds-mediam-size_1-of-2 slds-large-size_1-of-2 slds-small-size_1-of-2">
                                         <div class="slds-form-element slds-m-bottom_medium">
-                                            <label class="slds-form-element__label" for="notice-period">Notice
-                                                Period</label>
+                                            <label class="slds-form-element__label" for="hometown">Hometown</label>
                                             <div class="slds-form-element__control">
-                                                <input class="slds-input" label="Notice Period" placeholder="60"
-                                                    onkeyup="onlyNumeric(this)" id="notice-period" maxLength="2" />
+                                                <input class="slds-input" id="hometown" maxLength="100"
+                                                    placeholder="Jaipur, Rajasthan" />
                                             </div>
-                                        </div>
-                                        <label class="slds-required"></label>
+                                            <label class="slds-required"></label>
 
+                                        </div>
                                     </div>
 
                                     <div
