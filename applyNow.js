@@ -150,7 +150,7 @@ const handleSave = (e) => {
 }
 
 
-const siteUrl = 'https://metadologie-operations-dev-ed.my.site.com';
+const siteUrl = 'https://dev1-a2-dev-ed.develop.lightning.force.com/';
 const apiUrl = `${siteUrl}/services/apexrest/JobOpening/`;
 const saveCandidateInformation = () => {
 
