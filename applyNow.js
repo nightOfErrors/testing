@@ -151,7 +151,7 @@ const handleSave = (e) => {
 }
 
 
-const siteUrl = 'https://dev1-a2-dev-ed.develop.my.site.com';
+const siteUrl = 'https://metadologie-operations-dev-ed.my.site.com/';
 const apiUrl = `${siteUrl}/services/apexrest/JobOpening/`;
 const saveCandidateInformation = () => {
 
@@ -191,7 +191,19 @@ const saveCandidateInformation = () => {
             .then(res => {
 
                 document.getElementById("spinner").classList.add("hidden");
-                
+
+                formName.value = "";
+                email.value = "";
+                phone.value = "";
+                currentLocation.value = "";
+                currentSalary.value = "";
+                experience.value = "";
+                hometown.value = "";
+                expectedSalary.value = "";
+                currentCompany.value = "";
+                noticePeriod.value = "";
+
+
                 submissionSuccess();
                 handleButtonStatus(false);
                 if (res.includes('success')) {
@@ -200,7 +212,7 @@ const saveCandidateInformation = () => {
                 }
                 else {
                     console.log();
-                    showToast(res,'error', 3000);
+                    // showToast(res,'error', 3000);
                 }
 
             })
