@@ -147,6 +147,9 @@ const handleSave = (e) => {
       }
       
       let isRecordSaved = saveCandidateInformation();
+
+      window.location.href = "https://www.metadologie.com/";
+    
 }
 
 
