@@ -202,9 +202,9 @@ const saveCandidateInformation = () => {
                     showToast(res,'error', 3000);
                 }
 
-                setTimeout(() => {
-                    window.location.href = "https://www.metadologie.com/";
-                }, 2000);
+                // setTimeout(() => {
+                //     window.location.href = "https://www.metadologie.com/";
+                // }, 2000);
 
             })
             .catch(error => {
