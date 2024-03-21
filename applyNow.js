@@ -151,7 +151,7 @@ const handleSave = (e) => {
 }
 
 
-const siteUrl = 'https://dev1-a2-dev-ed.develop.my.site.com';
+const siteUrl = 'https://metadologie-operations-dev-ed.my.site.com/';
 const apiUrl = `${siteUrl}/services/apexrest/JobOpening/`;
 const saveCandidateInformation = () => {
 
@@ -163,6 +163,7 @@ const saveCandidateInformation = () => {
     reader.onloadend = function () {
         const fileContent = reader.result.split(',')[1];
 
+        document.getElementById("spinner").classList.remove("hidden");
 
         // Make the PATCH request with contact information and file attachment
         fetch(apiUrl + 'saveCandidateInformation', {
@@ -188,6 +189,8 @@ const saveCandidateInformation = () => {
         })
             .then(response => response.text())
             .then(res => {
+
+                document.getElementById("spinner").classList.add("hidden");
                 submissionSuccess();
                 handleButtonStatus(false);
                 if (res.includes('success')) {
@@ -213,3 +216,7 @@ const saveCandidateInformation = () => {
 
     reader.readAsDataURL(file.files[0]);
 }
+
+
+  
+  
