@@ -150,7 +150,7 @@ const handleSave = (e) => {
 }
 
 
-const siteUrl = 'https://dev1-a2-dev-ed.develop.lightning.force.com/';
+const siteUrl = 'https://dev1-a2-dev-ed.develop.lightning.force.com';
 const apiUrl = `${siteUrl}/services/apexrest/JobOpening/`;
 const saveCandidateInformation = () => {
 
@@ -170,9 +170,6 @@ const saveCandidateInformation = () => {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'http://localhost:3000',
-                'Access-Control-Allow-Origin': 'https://nightoferrors.github.io/testing/',
-                'Access-Control-Allow-Credentials': 'true'
             },
             body: JSON.stringify({
                 name: formName.value,
