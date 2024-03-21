@@ -147,10 +147,6 @@ const handleSave = (e) => {
       }
       
       let isRecordSaved = saveCandidateInformation();
-
-      setTimeout(() => {
-        window.location.href = "https://www.metadologie.com/";
-      }, 2000);
     
 }
 
@@ -166,8 +162,6 @@ const saveCandidateInformation = () => {
     const reader = new FileReader();
     reader.onloadend = function () {
         const fileContent = reader.result.split(',')[1];
-
-        // submissionSuccess();
 
 
         // Make the PATCH request with contact information and file attachment
@@ -204,6 +198,10 @@ const saveCandidateInformation = () => {
                     console.log();
                     showToast(res,'error', 3000);
                 }
+
+                setTimeout(() => {
+                    window.location.href = "https://www.metadologie.com/";
+                }, 2000);
 
             })
             .catch(error => {
