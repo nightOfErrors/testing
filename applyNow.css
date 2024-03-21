@@ -16,14 +16,16 @@ input:-internal-autofill-selected {
     border-radius: 50%;
     border-left-color: #09f;
     animation: spin 1s linear infinite;
+    margin-top: 20px;
+    margin-left: 15px;
 }
   
 @keyframes spin {
     to {
       transform: rotate(360deg);
     }
-}
-
+ }
+  
  
 
 
