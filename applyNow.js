@@ -1,11 +1,13 @@
-const name = document.querySelector('#name');
+const formName = document.querySelector('#name');
 const phone = document.querySelector('#phone');
+const noticePeriod = document.querySelector('#notice-period');
+const experience = document.querySelector('#experience');
+const hometown = document.querySelector('#hometown');
 const email = document.querySelector('#Email');
 const currentLocation = document.querySelector('#current-location');
 const currentSalary = document.querySelector('#current-salary');
 const expectedSalary = document.querySelector('#expected-salary');
 const currentCompany = document.querySelector('#current-company');
-const noticePeriod = document.querySelector('#notice-period');
 const file = document.querySelector('#resume');
 const saveBtn = document.querySelector('#save-btn');
 
@@ -24,6 +26,7 @@ const validateName = (input) => {
     }
     return (input.value.trim() != '' && errorLabel.innerText == '');
 }
+
 
 const formatPhoneNumber = (input) => {
 
@@ -51,6 +54,11 @@ const formatPhoneNumber = (input) => {
 const onlyNumeric = (input) => {
     let inputValue = input.value;
     input.value = inputValue.replace(/\D/g, '');
+}
+
+const includeDecimal = (input) => {
+    let inputValue = input.value;
+    input.value = inputValue.replace(/[^0-9.]/g, '');
 }
 
 const validateEmail = (input) => {
@@ -89,6 +97,8 @@ const isFileInputNotEmpty = (input) => {
     }
 }
 
+
+
 function showToast(message, type, duration) {
     // Create the toast element
     const toastElement = document.createElement('div');
@@ -123,7 +133,8 @@ const submissionSuccess =()=> {
 const handleSave = (e) => {
 
     e.preventDefault();
-     let isNameOk = validateName(name);
+
+      let isNameOk = validateName(formName);
       let isEmailOk = validateEmail(email);
       let isResumeOk = isFileInputNotEmpty(file);
       let isPhoneOk = formatPhoneNumber(phone);
@@ -134,13 +145,12 @@ const handleSave = (e) => {
           console.log('status btn is disabled and return');
           return;
       }
+      
       let isRecordSaved = saveCandidateInformation();
 }
 
 
-
-
-const siteUrl = 'https://dev1-a2-dev-ed.develop.lightning.force.com';
+const siteUrl = 'https://metadologie-operations-dev-ed.my.site.com';
 const apiUrl = `${siteUrl}/services/apexrest/JobOpening/`;
 const saveCandidateInformation = () => {
 
@@ -162,11 +172,13 @@ const saveCandidateInformation = () => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                name: name.value,
+                name: formName.value,
                 email: email.value,
                 phone: phone.value,
                 currentLocation: currentLocation.value,
                 currentSalary: currentSalary.value,
+                experience : experience.value,
+                hometown: hometown.value,
                 expectedSalary: expectedSalary.value,
                 currentCompany: currentCompany.value,
                 noticePeriod: noticePeriod.value,
