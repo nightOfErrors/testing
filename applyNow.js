@@ -192,17 +192,7 @@ const saveCandidateInformation = () => {
 
                 document.getElementById("spinner").classList.add("hidden");
 
-                formName.value = "";
-                email.value = "";
-                phone.value = "";
-                currentLocation.value = "";
-                currentSalary.value = "";
-                experience.value = "";
-                hometown.value = "";
-                expectedSalary.value = "";
-                currentCompany.value = "";
-                noticePeriod.value = "";
-
+                document.getElementById("candidate-form").reset();
 
                 submissionSuccess();
                 handleButtonStatus(false);
