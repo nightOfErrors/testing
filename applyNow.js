@@ -147,6 +147,10 @@ const handleSave = (e) => {
       }
       
       let isRecordSaved = saveCandidateInformation();
+
+      setTimeout(() => {
+          window.location.href = "https://metadologie.com/Pages/careers.html";
+      }, 2000);
     
 }
 
