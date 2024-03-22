@@ -147,10 +147,6 @@ const handleSave = (e) => {
       }
       
       let isRecordSaved = saveCandidateInformation();
-
-      setTimeout(() => {
-          window.location.href = "https://metadologie.com/Pages/careers.html";
-      }, 2000);
     
 }
 
@@ -218,6 +214,10 @@ const saveCandidateInformation = () => {
                     console.log();
                     // showToast(res,'error', 3000);
                 }
+
+                setTimeout(() => {
+                    window.location.href = "https://metadologie.com/Pages/careers.html";
+                }, 2000);
 
             })
             .catch(error => {
