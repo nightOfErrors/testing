@@ -193,6 +193,7 @@ const saveCandidateInformation = () => {
                 document.getElementById("spinner").classList.add("hidden");
 
                 document.getElementById("candidate-form").reset();
+                document.getElementById("resume").value = [];
 
                 submissionSuccess();
                 handleButtonStatus(false);
